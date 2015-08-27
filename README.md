@@ -8,8 +8,7 @@ No third party software has to be installed on the client's machine if its brows
 The addresses of the users' contacts are either found out by the router sending broadcast-messages to the other routers asking for the specific contact's (encrypted) address or if that failed by asking one of the contact's "home" routers for the address. The user that shall be contacted repeatedly tries to send its address to its "home" routers when it changes.
 Thus a user can even be contacted if broadcast traffic is being filtered on a higher level of the mesh network (e.g. on Supernodes in many Freifunk communities).
 
-Please note: The addresses are always OTP-encrypted with a random key that was exchanged in the last session the users were connected to each other. The encrypted address will be saved by the routers for every combination of the users' devices.
+Please note: The addresses are always OTP-encrypted with random keys that were exchanged in the last session the users were connected to each other. The encrypted address will be saved by the routers for every combination of the users' devices.
+Prioritised ways to contact a user allow the use of multiple devices and bouncers.
 
-Optionally prioritised ways to contact a user allow the use of multiple devices and bouncers.
-
-Optionally a distributed hash table system can be used instead of the "home" routers to make users harder to track.
+Optionally a distributed hash table can be used instead of the "home" routers to make users harder to track. If many people use this service this feature does only scale if many routers have a decent amount of memory (more than 32MB RAM).
